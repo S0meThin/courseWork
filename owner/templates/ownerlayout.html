@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{% block title %}Main Page{% endblock %}</title>
+</head>
+<body>
+    <div class = "MMheader">
+        <div class = "lay_name">
+            ICA
+        </div>
+        <div class = "lay_info">
+            Hello, {{user.get_username}}
+            <br>
+            <input type = "submit" value = "Log Out" class = "Logout-BTN">
+        </div>
+    </div>
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

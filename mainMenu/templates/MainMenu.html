@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+    {% block title %}Main menu{% endblock %}
+    {% block body %}
+    <div class = "MMbody">
+        <div class = "MMcontent content">
+            <div class = "MenuChoice"><a href="/dest/article_lookup">1. Article lookup</a></div>
+            <div class = "MenuChoice"><a href="/dest/inventory_count">2. Inventory count</a></div>
+            <div class = "MenuChoice"><a href="/main_menu/order_management">3. Order management</a></div>
+            <div class = "MenuChoice"><a href="/dest/returns">4. Returns</a></div>
+            {% if user.allowedToSalesStat %}
+                <div class = "MenuChoice"><a href="/dest/sales_analysis">5. Sales analysis</a></div>
+            {% endif %}
+        </div>
+    </div>
+    {% endblock %}

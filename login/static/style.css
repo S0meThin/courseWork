@@ -1,0 +1,398 @@
+* {
+    margin: 0px;
+    color: black;
+}
+
+body {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.lay_name {
+    font-size: 35px;
+}
+
+.lay_info {
+    font-size:25px;
+}
+
+.Logout-BTN {
+    font-size: 20px;
+    background: none;
+}
+
+.MenuChoice {
+    background-color: #ede4e4;
+    margin-top: 14px;
+    height: 40px;
+    font-size: 30px;
+    transition: 0.2s ease-in;
+}
+
+.MenuChoice:hover {
+    background-color: #d1cbcb;
+    color:white;
+}
+
+.loginDiv {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.formDiv {
+    text-align: center;
+    margin-top: 20vh;    
+}
+
+.loginForm {
+    display: inline-block;
+    width: 30%;
+    margin-top: 6vh;
+}
+
+.loginForm > input {
+    height: 52px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top:20px;
+    font-size: 32px;
+}
+
+.loginForm > input[type = "submit"] {
+    width: 120px;
+    height: 40px;
+    margin-top: 18px;
+}
+
+.MMbody {
+    text-align:center;
+    margin-top: 200px;
+}
+
+.MMheader {
+    margin: 10px 20px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+}
+
+.content > div {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.ALMain {
+    padding: 4% 25% 0 25%;
+    text-align: center;
+}
+
+.Row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.ALinput {
+    display: block;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    appearance: none;
+    border-radius: 10px;
+}
+
+.sales-divider {
+    width: 100%;
+    border: 1px solid black;
+    font-size: 22px;
+    text-align:center;
+    background-color: lightgray;
+    margin: 20px 0 20px 0;
+}
+
+.transaction-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ICScreen {
+    text-align:center;
+    margin-top: 20px;
+}
+
+.ICMain {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.ICMain div {
+    margin: 10px 0 10px 0;
+}
+
+.upcInput {
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.qtyInput {
+    border-radius: 10px;
+    font-size: 22px;
+    width: 50px;
+}
+
+.submitInput {
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.OMMain {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.OMcontent {
+    margin-top: 10%;
+}
+
+.OOMain {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.OOcontent {
+    display: inline-block;
+    width: 40%;
+}
+
+.OOcontent > h1 {
+    margin: 15px;
+}
+
+.OOlistItem {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding:10px;    
+    margin-top: 5px;
+    transition: 0.2s ease-in;
+    background-color: #ede4e4;
+}
+.OOlistItem:hover {
+    background-color: #d1cbcb;
+    color:white;
+}
+
+.OMain {
+    text-align: center;
+}
+
+.Ocontent {
+    display: inline-block;
+    width: 40%;
+    font-size: 30px;
+}
+
+.Ocontent div {
+    margin-top: 15px;
+}
+
+.toRight {
+    text-align: end;
+}
+
+.Ocontent div:nth-child(3) {
+    text-align: left;
+}
+
+.MOMain {
+    text-align: center;
+    font-size: 20px;
+}
+
+.MOcontent {
+    display: inline-block;
+    margin-top: 15px;
+    width: 40%;
+}
+
+.MOcontent > div:first-child {
+    margin: 15px;
+}
+
+.MOlist{
+    text-align:left;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.MOlist > div{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.RMain {
+    text-align: center;
+}
+
+.Rcontent {
+    margin-top: 30px;
+    display: inline-block;
+    width: 40%;
+    font-size: 20px
+}
+
+.Rscreen {
+    display: flex;
+    justify-content: space-between;
+    min-height: 40vh;
+    align-items: center;
+}
+
+.Rinfo {
+    font-size: 22px;
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    text-align:left;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 16px;
+    width: 300px;
+    background-color: #ede4e4;
+}
+
+.RetMain {
+    text-align:center;
+}
+
+.RetScreen {
+    width: 40%;
+    display: inline-block;
+}
+
+.RetScreen > div:first-child {
+    margin: 20px;
+}
+
+.SAMain {
+    text-align: center;
+    font-size:22px;
+}
+
+.SAMain > h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.SAcontainer {
+    width: 50%;
+    display: inline-block;
+}
+
+.SAbestsellers {
+    padding: 10px;
+}
+
+.SAreturns {
+    padding: 10px;
+}
+
+.back-btn {
+    text-align: left;
+    margin:20px;
+    font-size: 25px;
+}
+
+.error-msg {
+    display:none;
+    background-color: #d93f44;
+    color: black;
+    text-align:center;
+}
+
+.Logout-BTN {
+    text-decoration: underline;
+    color:black;
+    border:none;
+}
+
+.Logout-BTN:hover {
+    cursor: pointer;
+    color: blue;
+    transition: 0.5s ease-in;
+}
+
+.ret-hist-screen {
+    text-align: center;
+    font-size: 25px;
+}
+
+.ret-hist-content {
+    text-align:left;
+    display: inline-block;
+}
+
+.ret-hist-link {
+    text-align: right;
+    background: none;
+}
+
+.owner-stores {
+    margin: 0px 10px 0px 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.owner-store {
+    padding:5px;
+    margin-top: 14px;
+    height: 40px;
+    font-size: 30px;
+    transition: 0.2s ease-in;
+    margin: 0px 10px 0px 10px;
+}
+
+.owner-store:hover {
+    background-color: #c2c2c2;
+    color:white;
+}
+
+.store-info-div {
+    font-size: 30px;
+}
+
+.store-total-div {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.hide {
+    display: none;
+}

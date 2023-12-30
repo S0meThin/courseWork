@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Order{% endblock %}
+
+{% block body %} 
+<div class = "back-btn"><a href="/dest/on_order">(Back)</a></div>
+<div class = "OMain">
+    <h1>On order</h1>
+    <div class = "Ocontent">
+        <div class = "Row first">
+            <div>Del#: {{delN}}</div>
+            <div>Status: {{order.status}}</div>
+        </div>
+
+        <div>
+            List of things on order:
+            {% for item in stuff %}
+                <div>Name: {{item.name}}, UPC: {{item.upc}}, QTY: {{item.qty}} CASE</div>
+            {% endfor %}
+            </div>
+    </div>
+</div>
+{% endblock %}

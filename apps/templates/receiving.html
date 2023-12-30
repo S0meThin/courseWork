@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Receiving{% endblock %}
+
+{% block body %} 
+<script src = "../static/receiving.js"></script>
+<div class = "back-btn"><a href="/main_menu/order_management">(Back)</a></div>
+<div class = "RMain">
+    <h1>Receiving</h1>
+    <div class = "Rcontent">
+        <div class = "error-msg">UPC not found</div>
+            <div class = "Rscreen">
+                <div>
+                    Del#: <input class = "delInput upcInput" type="number">
+                </div>
+                <div class = "Rinfo">
+                    <div>Number of pieces: <span class = "totalP">***</span></div>
+                    <div>EXP Date of Del: <span class = "expDelDate">***</span></div>
+                </div>
+            </div>
+            <input class = "submitInput" type="submit" value="Submit">
+    </div>
+</div>
+{% endblock %}

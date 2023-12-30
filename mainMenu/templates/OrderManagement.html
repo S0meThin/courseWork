@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Order management{% endblock %}
+
+{% block body %}
+<div class = "OMMain">
+    <h1>Order Management</h1>
+    <div class = "back-btn"><a href="/main_menu">(Back)</a></div>
+    <div class = "OMcontent content">
+        <div class = "MenuChoice"><a href="/dest/on_order">1. On Order</a></div>
+        <div class = "MenuChoice"><a href="/dest/manual_order">2. Manual Order</a></div>
+        {% if user.allowedToReceive %}
+            <div class = "MenuChoice"><a href="/dest/receiving">3. Receiving</a></div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

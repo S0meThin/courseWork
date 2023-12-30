@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Article lookup{% endblock %}
+
+{% block body %} 
+<script src = "../static/articleLookup.js"></script>
+<div class = "back-btn"><a href="/main_menu">(Back)</a></div>
+<div class = "ALMain">
+    <h1>Article Lookup</h1>
+    <div class = "error-msg">UPC not found</div>
+    <div class = "ALMainScreen">
+        <div class="Row first">
+            <div>Name of the product: <span class = "nameOfProd">**</span></div>
+        </div>
+        <input type="number" class="ALinput" placeholder = "UPC: " name = "upcInput" maxlength="12">
+        <div class="Row second">
+            <div>On Hand: <span class = "ohOfProd">**</span></div>
+            <div>Pack: <span class = "packOfProd">**</span></div>
+        </div>
+        <div class="Row third">
+            <div>On order: <span class = "ooOfProd">**</span></div>
+            <div>Next shipment date: <span class = "nsdOfProd">**/**/****</span></div>
+        </div>
+        <div class="Row fourth">
+            <div>On return: <span class = "orOfProd">**</span></div>
+            <div>Next return date: <span class = "nrdOfProd">**/**/****</span></div>
+        </div>
+
+        <div class = "sales-divider">Sales:</div>
+
+        <div class = "transaction-list">
+            <div>List of transactions:
+                <div class = "list_of_transa">
+
+                </div>
+            </div>
+            <div>Average Daily Sales: <span class = "avg-sales">**</span></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

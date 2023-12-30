@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}On Order{% endblock %}
+
+{% block body %} 
+<div class = "back-btn"><a href="/main_menu/order_management">(Back)</a></div>
+<div class = "OOMain">
+    <h1>
+        On order
+    </h1>
+    <div class = "OOcontent">
+        <h1>
+            List of orders:
+        </h1>
+        <div>
+                {% for order in list_of_orders %}
+                <div class = "OOlistItem">
+                    <a href="/dest/orders/{{order.delN}}">
+                        Del Date: {{order.dateD}} Del#: {{order.delN}} Status: {{order.status}} Order Date: {{order.dateO}}
+                    </a>
+                </div>    
+                {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

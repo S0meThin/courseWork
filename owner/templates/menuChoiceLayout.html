@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{% block title %}Main Page{% endblock %}</title>
+</head>
+<body>
+    <div class = "MMheader">
+        <div class = "lay_name">
+            ICA
+        </div>
+        <div class = "lay_info">
+            Hello, {{user.get_username}}
+            <br>
+            <input type = "submit" value = "Log Out" class = "Logout-BTN">
+        </div>
+    </div>
+
+    <div class = "owner-main">
+
+        <div class = "hide"> 
+            <h1>Article Lookup</h1>
+            <div class = "error-msg">UPC not found</div>
+            <input type="number" class="ALinput" placeholder = "UPC: " name = "upcInput" maxlength="12">
+        </div>
+
+        <h1>Choose the store you would like to know about:</h1>
+        <div class = "owner-stores">
+            {% for store in stores %}
+                <div class = "owner-store" data-store = "{{store.number}}">Store #{{store.number}}</div>
+            {% endfor %}
+        </div>
+
+        <br>
+        <hr>
+        <div class = 'store-info-div'>
+        </div>
+        <div class = "store-total-div">
+
+        </div>
+    </div>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

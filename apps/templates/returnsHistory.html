@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    History of returns
+{% endblock %}
+
+{% block body %}
+    <div class = "ret-hist-screen">
+        <h1>Returns history</h1>
+        <div class = "ret-hist-content">
+            Returns:
+            {% for return in returns %}
+                <div style = "border: 1px solid black;padding: 5px;">Name: {{return.item.name}} - Qty: {{return.qty}} - Retured by: {{return.user}} - Date: {{return.dateR}}</div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

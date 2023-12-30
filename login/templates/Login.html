@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>ICA</title>
+</head>
+<body>
+    <div class = "loginDiv">
+        <h1>Inventory control app</h1>
+        <div class = "formDiv">
+            <h1>Log in</h1>
+            <form action="/login/" method = "POST" class = "loginForm">
+                {% csrf_token %}
+                <input type="text" name = "loginLog" autocomplete="off">
+                <input type="password" name = "loginPass" autocomplete="off">
+                <input type="submit" placeholder = "Log in" class = "submitBtn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

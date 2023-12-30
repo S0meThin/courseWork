@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Returns{% endblock %}
+
+{% block body %} 
+<script src = "../static/returns.js"></script>
+<div class = "back-btn"><a href="/main_menu">(Back)</a></div>
+<div class = "RetMain">
+    <h1>
+        Returns
+    </h1>
+    <div class = "RetScreen">
+        <div class = "error-msg">UPC not found</div>
+        <div class = "ret-hist-link">
+            <a class = "Logout-BTN" href="/dest/history_returns">Returns history</a>
+        </div>
+        <div>
+            Name: <span class = "ret_name"></span>
+        </div>
+            <input class = "upcInput" type="number" placeholder = "UPC:" name = "upc">
+            <input class = "qtyInput" type="number" placeholder = "Qty:" name = "qty">
+            <input class = "submitInput" type="submit" value="Enter">
+        <div class = "MOlist">
+            List: 
+            <div class = "ret_list">
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

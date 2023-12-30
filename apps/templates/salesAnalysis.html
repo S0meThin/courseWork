@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Sales Analysis{% endblock %}
+
+{% block body %} 
+<div class = "back-btn"><a href="/main_menu">(Back)</a></div>
+<div class = "SAMain">
+    <h1>Sales Analysis</h1>
+    <div class = "SAscreen">
+        <div>
+            {{info.month}} Report
+        </div>
+        <div class = "SAcontainer">
+            <div class = "Row">
+                <div class = "SAbestsellers">
+                    Top bestsellers:
+                    {% for sale in info.sales %}
+                        <div style = "border: 1px solid black;">
+                            Name: {{sale.name}} - UPC: {{sale.upc}} - Sales this month: {{sale.qty}}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class = "SAreturns">
+                    Top returns:
+                    {% for return in info.returns %}
+                        <div style = "border: 1px solid black;">
+                            Name: {{return.name}} - UPC: {{return.upc}} - Returns: {{return.qty}} - User: {{return.user}}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class = "Row">
+                <div class = "SAtotalProfit">
+                    Turnover this month: {{info.info.turnover}}$ <br>
+                    Profit this month: {{info.info.profit}}$
+                </div>
+                <div class = "SAtotalReturn">
+                    Total # of pieces returned this month: {{info.info.totalPRet}} <br>
+                    Total of returns this month: {{info.info.totalRet}}$
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

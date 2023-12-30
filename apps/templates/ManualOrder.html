@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Manual Order{% endblock %}
+
+{% block body %} 
+<script src = "../static/manualOrder.js"></script>
+<div class = "back-btn"><a href="/main_menu/order_management">(Back)</a></div>
+<div class = "MOMain">
+    <h1>Manual Order</h1>
+    <div class = "MOcontent">
+        <div class = "error-msg">UPC not found</div>
+        <div class = "name_MO">Name of the product</div>
+            <input class = "upcInput" type="number" placeholder = "UPC:" name = "upc">
+            <input class = "qtyInput" type="number" placeholder = "Qty:" name = "qty">
+            <input class = "submitInput enterBTN" type="submit" value="Enter">
+            <input class = "submitInput submitBTN" type="submit" value="Submit">
+        <div class = "MOlist">
+            List: 
+            <div class = "list_MO"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'ownerlayout.html' %}
+
+{% block title %}
+    Main page
+{% endblock %}
+
+{% block body %}
+    <div class = owner-main>
+        <h1>Stores info:</h1>
+        <div class = "owner-screen">
+            <div class = 'MenuChoice'><a href="/owner/sales">1. Sales</a></div>
+            <div class = 'MenuChoice'><a href="/owner/returns">2. Returns</a></div>
+            <div class = 'MenuChoice'><a href="/owner/items">3. Item comparison</a></div>
+        </div>
+    </div>
+{% endblock %}
